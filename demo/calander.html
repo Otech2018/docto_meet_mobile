@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Doctor Appointment</title>
+
+    <!--plugins-->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-datepicker-master/dist/css/datepicker-custom.css">
+    <link href="node_modules/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.css">
+    <link href="scss/dark-theme.css" rel="stylesheet">
+  </head>
+  <body>
+
+<header class="top-header d-flex align-items-center justify-content-center px-3 gap-3 text-center">
+  <div class="d-flex align-items-center position-absolute start-0 ms-3">
+    <a href="javascript:;" class="btn-back" onclick="history.back()">
+      <i class='bx bx-arrow-back'></i>
+    </a>
+  </div>
+  <div class="">
+    <h5 class="mb-0 header-title">Select Date & Time</h5>
+  </div>
+</header>
+
+<main class="main-content">
+    
+  <div class="mb-4 calendar">
+    <h5 class="mb-4">Appointment</h5>
+    <div id="datetimepicker"></div>
+  </div>
+  
+  <div class="timslot">
+    <h5 class="mb-4">Available Time Slots</h5>
+    <div class="">
+      <div class="timing">
+        <div class="d-flex align-items-center flex-wrap gap-3">
+          <button class="btn btn-outline-primary px-3">8:00 AM</button>
+          <button class="btn btn-primary px-3">2:00 PM</button>
+          <button class="btn btn-outline-primary px-3">12:00 PM</button>
+          <button class="btn btn-outline-primary px-3">6:20 PM</button>
+          <button class="btn btn-outline-primary px-3">9:50 PM</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-grid mt-5">
+    <a href="myappointments.html" class="btn btn-primary">Set Appointment</a>
+  </div>
+
+</main>
+
+
+<!--start footer menu-->
+<footer class="footer d-flex align-items-center fixed-bottom">
+  <ul class="nav nav-underline nav-justified w-100">
+    <li class="nav-item">
+      <a class="nav-link" href="home.html"><i class='bx bx-home-alt'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="departments.html"><i class='bx bx-grid-alt'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="calander.html"><i class='bx bx-calendar-check'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="messages.html"><i class='bx bx-comment'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="profile.html"><i class='bx bx-user-circle'></i></a>
+    </li>
+  </ul>
+</footer>
+<!--end footer menu-->
+
+
+  <script src="assets/js/bootstrap.bundle.js"></script>
+
+  <!--plugins-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/plugins/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+  <script>
+
+    $(function () {
+      $('#datetimepicker').datepicker({
+       
+      });
+    });
+
+  </script>
+  <script src="https://kit.fontawesome.com/45657fe01b.js"></script>
+  
+
+  </body>
+</html>

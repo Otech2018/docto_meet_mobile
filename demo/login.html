@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Doctor Appointment</title>
+
+    <!--plugins-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link href="node_modules/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.css">
+    <link href="scss/dark-theme.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+<main class="main-content">
+  <div class="login-wrapper">
+    <div class="text-center">
+        <h4 class="fw-bold">Sign In</h4>
+    </div>
+      
+    <form class="row g-4 auth">
+      <div class="col-12">
+        <label for="location" class="form-label fw-bold">Email</label>
+        <div class="position-relative">
+          <input class="form-control form-control-lg px-5" type="text" id="location" placeholder="example@xyz.com" value="jhon@gmail.com">
+          <span class="position-absolute top-50 ms-3 translate-middle-y start-0 search-icon"><i class='bx bx-envelope'></i></span>
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="inputChoosePassword" class="form-label">Password</label>
+        <div class="position-relative" id="show_hide_password">
+          <input type="password" class="form-control form-control-lg px-5" id="inputChoosePassword" placeholder="example@xyz.com" value="12345678910">
+          <span class="position-absolute top-50 ms-3 translate-middle-y start-0 search-icon"><i class='bx bx-lock-alt'></i></span>
+           <span class="position-absolute top-50 me-3 translate-middle-y end-0 search-icon show-password-icon cursor-pointer"><i class='bx bx-hide'></i></span>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Remember Me
+            </label>
+          </div>
+          <div class="">
+             <a href="forgot-password.html" class="text-muted">Forgot Password</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="d-grid">
+          <a href="home.html" class="btn btn-primary btn-lg">Sign In</a>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="text-center">OR</div>
+      </div>
+      <div class="col-12">
+        <div class="social-login d-flex align-items-center gap-3 justify-content-center">
+          <a href="javascript:;" class="social-icon">
+            <img src="assets/images/icons/01.png" width="40" alt="">
+          </a>
+          <a href="javascript:;" class="social-icon">
+            <img src="assets/images/icons/02.png" width="40" alt="">
+          </a>
+          <a href="javascript:;" class="social-icon">
+            <img src="assets/images/icons/03.png" width="40" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="text-center">
+          <p class="mb-0">Dont't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+      </div>
+
+
+    </form>
+
+  </div>
+    
+</main>
+
+  <script src="assets/js/bootstrap.bundle.js"></script>
+
+  <!--plugins-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/45657fe01b.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <!--Password show & hide js -->
+	<script>
+		$(document).ready(function () {
+			$("#show_hide_password .show-password-icon").on('click', function (event) {
+				event.preventDefault();
+				if ($('#show_hide_password input').attr("type") == "text") {
+					$('#show_hide_password input').attr('type', 'password');
+					$('#show_hide_password i').addClass("bx-hide");
+					$('#show_hide_password i').removeClass("bx-show");
+				} else if ($('#show_hide_password input').attr("type") == "password") {
+					$('#show_hide_password input').attr('type', 'text');
+					$('#show_hide_password i').removeClass("bx-hide");
+					$('#show_hide_password i').addClass("bx-show");
+				}
+			});
+		});
+	</script>
+
+  </body>
+</html>

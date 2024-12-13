@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Doctor Appointment</title>
+
+    <!--plugins-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link href="node_modules/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.css">
+    <link href="scss/dark-theme.css" rel="stylesheet">
+  </head>
+  <body>
+
+<header class="top-header d-flex align-items-center justify-content-center px-3 gap-3 text-center">
+  <div class="d-flex align-items-center position-absolute start-0 ms-3">
+    <a href="javascript:;" class="btn-back" onclick="history.back()">
+      <i class='bx bx-arrow-back'></i>
+    </a>
+  </div>
+  <div class="">
+    <h5 class="mb-0 header-title">Departments</h5>
+  </div>
+</header>
+
+<main class="main-content">
+
+   <!--start searchbar-->
+   <div class="position-relative searchbar">
+    <input class="form-control px-5" type="search" placeholder="Type here to search">
+    <span class="position-absolute top-50 ms-3 translate-middle-y start-0 top-50 search-icon"><i class='bx bx-search'></i></span>
+  </div>
+  <!--end searchbar-->
+
+<!-- start Available doctor-->
+<section class="my-4">
+
+  <h3 class="mb-3 d-none">Departments</h3>
+
+  <!--start departments-->
+  <div class="row row-cols-3 g-3">
+
+    <div class="col">
+      <div class="card border-0">
+        <div class="card-body text-center">
+          <img src="assets/images/category/01.png" width="40" alt="...">
+          <p class="mb-0 mt-1 cat-title">Cardiology</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-0">
+        <div class="card-body text-center">
+          <img src="assets/images/category/02.png" width="40" alt="...">
+          <p class="mb-0 mt-1 cat-title">Dentist</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-0">
+        <div class="card-body text-center">
+          <img src="assets/images/category/03.png" width="40" alt="...">
+          <p class="mb-0 mt-1 cat-title">Dermatology</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-0">
+        <div class="card-body text-center">
+          <img src="assets/images/category/04.png" width="40" alt="...">
+          <p class="mb-0 mt-1 cat-title">Nuerology</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-0">
+        <div class="card-body text-center">
+          <img src="assets/images/category/05.png" width="40" alt="...">
+          <p class="mb-0 mt-1 cat-title">Heartology</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-0">
+        <div class="card-body text-center">
+          <img src="assets/images/category/06.png" width="40" alt="...">
+          <p class="mb-0 mt-1 cat-title">Surgery</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-0">
+        <div class="card-body text-center">
+          <img src="assets/images/category/07.png" width="40" alt="...">
+          <p class="mb-0 mt-1 cat-title">Orthopaedic</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-0">
+        <div class="card-body text-center">
+          <img src="assets/images/category/08.png" width="40" alt="...">
+          <p class="mb-0 mt-1 cat-title">Gynaecology</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-0">
+        <div class="card-body text-center">
+          <img src="assets/images/category/09.png" width="40" alt="...">
+          <p class="mb-0 mt-1 cat-title">Childcare</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-0">
+        <div class="card-body text-center">
+          <img src="assets/images/category/10.png" width="40" alt="...">
+          <p class="mb-0 mt-1 cat-title">Skincare</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-0">
+        <div class="card-body text-center">
+          <img src="assets/images/category/11.png" width="40" alt="...">
+          <p class="mb-0 mt-1 cat-title">Physiotherapy</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-0">
+        <div class="card-body text-center">
+          <img src="assets/images/category/12.png" width="40" alt="...">
+          <p class="mb-0 mt-1 cat-title">Reception</p>
+        </div>
+      </div>
+    </div>
+
+  </div><!--end row-->
+  <!--end departments-->
+
+
+</section>
+<!--end Available doctors-->
+
+</main>
+
+
+
+
+<!--start footer menu-->
+<footer class="footer d-flex align-items-center fixed-bottom">
+  <ul class="nav nav-underline nav-justified w-100">
+    <li class="nav-item">
+      <a class="nav-link" href="home.html"><i class='bx bx-home-alt'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="departments.html"><i class='bx bx-grid-alt'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="calander.html"><i class='bx bx-calendar-check'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="messages.html"><i class='bx bx-comment'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="profile.html"><i class='bx bx-user-circle'></i></a>
+    </li>
+  </ul>
+</footer>
+<!--end footer menu-->
+
+
+  <script src="assets/js/bootstrap.bundle.js"></script>
+
+  <!--plugins-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/45657fe01b.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+  </body>
+</html>

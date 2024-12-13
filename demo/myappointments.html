@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Doctor Appointment</title>
+
+    <!--plugins-->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-datepicker-master/dist/css/datepicker-custom.css">
+    <link href="node_modules/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.css">
+    <link href="scss/dark-theme.css" rel="stylesheet">
+  </head>
+  <body>
+
+<header class="top-header d-flex align-items-center justify-content-center px-3 gap-3 text-center">
+  <div class="d-flex align-items-center position-absolute start-0 ms-3">
+    <a href="javascript:;" class="btn-back" onclick="history.back()">
+      <i class='bx bx-arrow-back'></i>
+    </a>
+  </div>
+  <div class="">
+    <h5 class="mb-0 header-title">My Appointment</h5>
+  </div>
+</header>
+
+<main class="main-content">
+
+  <div class="mb-4">
+    <div class="card border-0">
+      <div class="card-body">
+        <div class="d-flex align-items-center justify-content-between fs-5">
+          <div class="d-flex flex-column gap-2 appointment-dates p-2 text-center rounded-5">
+            <div class="date">
+              25
+            </div>
+            <div class="month">
+              Jan
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-2 appointment-dates p-2 text-center rounded-5">
+            <div class="date">
+              12
+            </div>
+            <div class="month">
+              Mar
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-2 bg-primary text-white  p-2 text-center rounded-5">
+            <div class="date">
+              15
+            </div>
+            <div class="month">
+              Apr
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-2 appointment-dates p-2 text-center rounded-5">
+            <div class="date">
+              10
+            </div>
+            <div class="month">
+              Jun
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-2 appointment-dates p-2 text-center rounded-5">
+            <div class="date">
+              24
+            </div>
+            <div class="month">
+              Aug
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-2 appointment-dates p-2 text-center rounded-5">
+            <div class="date">
+              22
+            </div>
+            <div class="month">
+              Dec
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="appointment-doctor-list d-flex flex-column gap-3">
+
+    <div class="card border-0">
+      <div class="row g-0">
+        <div class="col-4 align-self-end">
+          <img src="assets/images/doctors/01.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <div class="d-flex flex-column">
+              <h5 class="doctor-name">Dr. Michle Jhon</h5>
+              <p class="mb-2 fs-5">Cardiology</p>
+              <p class="mb-0 fs-1 fw-bold">6:00 PM</p>
+            </div>
+            <div class="mt-3 d-flex gap-3">
+              <a href="javascript:;" class="btn btn-sm px-3 btn-primary">Cancle</a>
+              <a href="javascript:;" class="btn btn-sm px-3 btn-primary">Reshedule</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card border-0">
+      <div class="row g-0">
+        <div class="col-4 align-self-end">
+          <img src="assets/images/doctors/02.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <div class="d-flex flex-column">
+              <h5 class="doctor-name">Dr. Jelina Don</h5>
+              <p class="mb-2 fs-5">Dermatology</p>
+              <p class="mb-0 fs-1 fw-bold">8:00 AM</p>
+            </div>
+            <div class="mt-3 d-flex gap-3">
+              <a href="javascript:;" class="btn btn-sm px-3 btn-primary">Cancle</a>
+              <a href="javascript:;" class="btn btn-sm px-3 btn-primary">Reshedule</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card border-0">
+      <div class="row g-0">
+        <div class="col-4 align-self-end">
+          <img src="assets/images/doctors/04.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <div class="d-flex flex-column">
+              <h5 class="doctor-name">Dr. Fatima Siddhi</h5>
+              <p class="mb-2 fs-5">Sexologist</p>
+              <p class="mb-0 fs-1 fw-bold">5:00 PM</p>
+            </div>
+            <div class="mt-3 d-flex gap-3">
+              <a href="javascript:;" class="btn btn-sm px-3 btn-primary">Cancle</a>
+              <a href="javascript:;" class="btn btn-sm px-3 btn-primary">Reshedule</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+</main>
+
+
+
+
+<!--start footer menu-->
+<footer class="footer d-flex align-items-center fixed-bottom">
+  <ul class="nav nav-underline nav-justified w-100">
+    <li class="nav-item">
+      <a class="nav-link" href="home.html"><i class='bx bx-home-alt'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="departments.html"><i class='bx bx-grid-alt'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="calander.html"><i class='bx bx-calendar-check'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="messages.html"><i class='bx bx-comment'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="profile.html"><i class='bx bx-user-circle'></i></a>
+    </li>
+  </ul>
+</footer>
+<!--end footer menu-->
+
+
+  <script src="assets/js/bootstrap.bundle.js"></script>
+
+  <!--plugins-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/plugins/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+  <script>
+
+    $(function () {
+      $('#datetimepicker').datepicker({
+       
+      });
+    });
+
+  </script>
+  <script src="https://kit.fontawesome.com/45657fe01b.js"></script>
+  
+
+  </body>
+</html>

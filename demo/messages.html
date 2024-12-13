@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Doctor Appointment</title>
+
+    <!--plugins-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link href="node_modules/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.css">
+    <link href="scss/dark-theme.css" rel="stylesheet">
+  </head>
+  <body>
+
+  
+<header class="top-header d-flex align-items-center justify-content-center px-3 gap-3 text-center">
+    <div class="d-flex align-items-center position-absolute start-0 ms-3">
+      <a href="javascript:;" class="btn-back" onclick="history.back()">
+        <i class='bx bx-arrow-back'></i>
+      </a>
+    </div>
+    <div class="">
+      <h5 class="mb-0 header-title">Messages</h5>
+    </div>
+</header>
+
+<main class="main-content">
+    
+    <!--start searchbar-->
+    <div class="position-relative searchbar">
+      <input class="form-control px-5" type="search" placeholder="Type here to search">
+      <span class="position-absolute top-50 ms-3 translate-middle-y start-0 top-50 search-icon"><i class='bx bx-search'></i></span>
+    </div>
+    <!--end searchbar-->
+
+  <!--start user chats-->
+    <section class="my-4">
+      <h3 class="mb-3 section-title">Active Now</h3>
+
+      <swiper-container class="chatSwiper" slides-per-view="4" space-between="16">
+        <swiper-slide>
+          <div class="position-relative onlineUser">
+            <img src="assets/images/avatars/avatar-1.png" width="75" height="75" class="rounded-circle bg-white p-1" alt="">
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="position-relative onlineUser">
+            <img src="assets/images/avatars/avatar-2.png" width="75" height="75" class="rounded-circle bg-white p-1" alt="">
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="position-relative onlineUser">
+            <img src="assets/images/avatars/avatar-3.png" width="75" height="75" class="rounded-circle bg-white p-1" alt="">
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="position-relative onlineUser">
+            <img src="assets/images/avatars/avatar-4.png" width="75" height="75" class="rounded-circle bg-white p-1" alt="">
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="position-relative onlineUser">
+            <img src="assets/images/avatars/avatar-5.png" width="75" height="75" class="rounded-circle bg-white p-1" alt="">
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="position-relative onlineUser">
+            <img src="assets/images/avatars/avatar-6.png" width="75" height="75" class="rounded-circle bg-white p-1" alt="">
+          </div>
+        </swiper-slide>
+      </swiper-container>
+
+    </section>
+  <!--end user chats-->
+
+
+  <!--start user messages-->
+  <section class="my-4">
+     <h3 class="mb-3 section-title">Messages</h3>
+
+
+     <div class="message-list d-flex flex-column gap-3">
+
+      <div class="card border-0">
+        <div class="card-body">
+          <div class="d-flex align-items-center justify-content-between">
+             <div class="msg-user">
+               <img src="assets/images/avatars/avatar-8.png" width="60" height="60" class="rounded-circle" alt="">
+             </div>
+             <div class="msg-info">
+                  <h6 class="mb-0 fw-bold">Dr. Sanya Rana</h6>
+                  <p class="mb-0">this is good for your health.</p>
+             </div>
+             <div class="d-flex flex-column gap-1 justify-content-center text-center">
+               <p class="mb-0">3 min </p>
+               <div class="msg-count bg-primary">2</div>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="card border-0">
+        <div class="card-body">
+          <div class="d-flex align-items-center justify-content-between">
+             <div class="msg-user">
+               <img src="assets/images/avatars/avatar-9.png" width="60" height="60" class="rounded-circle" alt="">
+             </div>
+             <div class="msg-info">
+                  <h6 class="mb-0 fw-bold">Dr. David Jeng</h6>
+                  <p class="mb-0">this is good for your health.</p>
+             </div>
+             <div class="d-flex flex-column gap-1 justify-content-center text-center">
+               <p class="mb-0">3 min </p>
+               <div class="msg-count bg-primary">2</div>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="card border-0">
+        <div class="card-body">
+          <div class="d-flex align-items-center justify-content-between">
+             <div class="msg-user">
+               <img src="assets/images/avatars/avatar-15.png" width="60" height="60" class="rounded-circle" alt="">
+             </div>
+             <div class="msg-info">
+                  <h6 class="mb-0 fw-bold">Dr. Pointing Jeo</h6>
+                  <p class="mb-0">this is good for your health.</p>
+             </div>
+             <div class="d-flex flex-column gap-1 justify-content-center text-center">
+               <p class="mb-0">3 min </p>
+               <div class="msg-count bg-primary">2</div>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="card border-0">
+        <div class="card-body">
+          <div class="d-flex align-items-center justify-content-between">
+             <div class="msg-user">
+               <img src="assets/images/avatars/avatar-13.png" width="60" height="60" class="rounded-circle" alt="">
+             </div>
+             <div class="msg-info">
+                  <h6 class="mb-0 fw-bold">Dr. Ritika Neo</h6>
+                  <p class="mb-0">this is good for your health.</p>
+             </div>
+             <div class="d-flex flex-column gap-1 justify-content-center text-center">
+               <p class="mb-0">3 min </p>
+               <div class="msg-count bg-primary">2</div>
+             </div>
+          </div>
+        </div>
+      </div>
+
+
+     </div>
+
+
+    </section>
+ <!--end user messages-->
+
+
+</main>
+
+
+<!--start footer menu-->
+<footer class="footer d-flex align-items-center fixed-bottom">
+  <ul class="nav nav-underline nav-justified w-100">
+    <li class="nav-item">
+      <a class="nav-link" href="home.html"><i class='bx bx-home-alt'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="departments.html"><i class='bx bx-grid-alt'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="calander.html"><i class='bx bx-calendar-check'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="messages.html"><i class='bx bx-comment'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="profile.html"><i class='bx bx-user-circle'></i></a>
+    </li>
+  </ul>
+</footer>
+<!--end footer menu-->
+
+  <script src="assets/js/bootstrap.bundle.js"></script>
+
+  <!--plugins-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/45657fe01b.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+  </body>
+</html>
